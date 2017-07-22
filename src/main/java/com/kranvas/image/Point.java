@@ -8,7 +8,7 @@ import com.kranvas.validations.ValidateAllChain;
 /**
  * Represents a coordinate on a 2D plane
  */
-public class Point {
+public class Point implements Comparable<Point> {
     private int x, y;
 
     private Point(int x, int y) {
@@ -70,5 +70,13 @@ public class Point {
     @Override
     public String toString() {
         return String.format("(%d, %d)", x, y);
+    }
+
+    @Override
+    public int compareTo(Point o) {
+        if (o == null)
+            return 1;
+
+        return (getX()+getY()) - (o.getX()+o.getY());
     }
 }

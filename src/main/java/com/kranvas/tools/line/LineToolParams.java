@@ -10,9 +10,9 @@ public class LineToolParams {
 
     public LineToolParams(Point p1, Point p2) {
         if (p1 == null || p2 == null)
-            throw new IllegalArgumentException("Both points cannot be null");
+            throw new IllegalArgumentException("Points cannot be null");
 
-        if (p1.getY() + p1.getX() <= p2.getY() + p2.getX()) {
+        if (p1.compareTo(p2) <= 0) {
             this.from = p1;
             this.to = p2;
         } else {

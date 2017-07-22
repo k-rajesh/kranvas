@@ -14,7 +14,7 @@
         <junit.jupiter.version>5.0.0-M3</junit.jupiter.version>
         <junit.vintage.version>4.12.0-M3</junit.vintage.version>
         <junit.platform.version>1.0.0-M3</junit.platform.version>
-        <mockito.version>1.9.5</mockito.version>
+        <mockito.version>1.10.19</mockito.version>
     </properties>
 
     <build>

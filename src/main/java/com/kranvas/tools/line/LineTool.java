@@ -3,6 +3,7 @@ package com.kranvas.tools.line;
 import com.kranvas.image.Image;
 import com.kranvas.image.Point;
 import com.kranvas.tools.Tool;
+import com.kranvas.tools.utils.LineDrawer;
 import com.kranvas.validations.ValidateAllChain;
 import com.kranvas.validations.ValidateAnyChain;
 import com.kranvas.validations.Validation;
@@ -15,7 +16,6 @@ import com.kranvas.validations.impl.VerticalLineValidation;
  * Draws horizontal and vertical lines
  */
 public class LineTool implements Tool<LineToolParams> {
-    private static final char LINE_COLOR = 'x';
 
     @Override
     public void perform(Image image, LineToolParams params) throws IllegalArgumentException {
@@ -23,9 +23,10 @@ public class LineTool implements Tool<LineToolParams> {
 
         Point from = params.getFrom();
         Point to = params.getTo();
-        for(int i=from.getX(); i <= to.getX(); i++)
-            for(int j=from.getY(); j <= to.getY(); j++)
-                image.getPixel(Point.at(i, j)).setColor(LINE_COLOR);
+        if (from.getX() == to.getX())
+            LineDrawer.drawVerticalLine(image, from, to.getY() - from.getY() + 1);
+        else
+            LineDrawer.drawHorizontalLine(image, from, to.getX() - from.getX() + 1);
     }
 
     private static void validateArguments(Image image, LineToolParams params) throws IllegalArgumentException {
