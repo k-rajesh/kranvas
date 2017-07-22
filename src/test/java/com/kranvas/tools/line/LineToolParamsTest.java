@@ -29,4 +29,9 @@ class LineToolParamsTest {
         assertEquals(FROM, params.getFrom());
         assertEquals(FROM, params.getTo());
     }
+
+    @Test
+    void points_cannot_be_null() {
+        assertThrows(IllegalArgumentException.class, () -> new LineToolParams(null, null));
+    }
 }

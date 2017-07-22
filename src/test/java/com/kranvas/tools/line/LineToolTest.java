@@ -82,6 +82,11 @@ class LineToolTest {
         verifyNullException(() -> sut.perform(mockImage, null));
     }
 
+    @Test
+    void coordinates_out_of_bounds() {
+        assertThrows(IllegalArgumentException.class, () -> sut.perform(mockImage, new LineToolParams(Point.at(1, IMAGE_HEIGHT+1), Point.at(1, 1))));
+    }
+
     private void verifyNullException(Executable executable) {
         Throwable exception = assertThrows(IllegalArgumentException.class, executable);
         assertTrue(exception.getMessage().contains("null"));
