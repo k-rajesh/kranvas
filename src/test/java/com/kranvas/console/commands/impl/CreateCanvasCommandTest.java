@@ -37,6 +37,11 @@ class CreateCanvasCommandTest {
     }
 
     @Test
+    void params_with_unexpected_letters() {
+        verifyIllegarlArugmentException("1 a 2", "Too many");
+    }
+
+    @Test
     void too_many_params_than_required() {
         verifyIllegarlArugmentException("1 2 3", "Too many");
     }
@@ -73,11 +78,20 @@ class CreateCanvasCommandTest {
 
     @Test
     void canvas_is_created_with_specified_size() {
-        sut.execute(executionContext, "10 20");
+        verifySuccessfulCanvasCreation("10 20", 10, 20);
+    }
+
+    @Test
+    void canvas_created_even_with_extra_spaces_in_input() {
+        verifySuccessfulCanvasCreation("   20    25   ", 20, 25);
+    }
+
+    private void verifySuccessfulCanvasCreation(String commandParams, int expectedWidth, int expectedHeight) {
+        sut.execute(executionContext, commandParams);
         ArgumentCaptor<Canvas> canvasArgumentCaptor = ArgumentCaptor.forClass(Canvas.class);
         verify(executionContext, times(1)).setCanvas(canvasArgumentCaptor.capture());
-        assertEquals(10, canvasArgumentCaptor.getValue().getImage().getWidth());
-        assertEquals(20, canvasArgumentCaptor.getValue().getImage().getHeight());
+        assertEquals(expectedWidth, canvasArgumentCaptor.getValue().getImage().getWidth());
+        assertEquals(expectedHeight, canvasArgumentCaptor.getValue().getImage().getHeight());
         verify(executionContext, times(1)).setPrintCanvasRequested(true);
     }
 

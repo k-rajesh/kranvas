@@ -29,8 +29,9 @@ class IntegerListParserTest {
     @Test
     void able_to_handle_non_integer_input() {
         List<Integer> result = IntegerListParser.parse(" 1  a 2  ");
-        assertEquals(2, result.size());
+        assertEquals(3, result.size());
         assertEquals(1, (int)result.get(0));
-        assertEquals(2, (int)result.get(1));
+        assertNull(result.get(1));
+        assertEquals(2, (int)result.get(2));
     }
 }

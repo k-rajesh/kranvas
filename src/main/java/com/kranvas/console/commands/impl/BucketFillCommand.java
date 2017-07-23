@@ -15,7 +15,7 @@ import java.util.List;
 public class BucketFillCommand implements Command {
     private static final String SHORT_NAME = "B";
     private static final String DESCRIPTION = "B x y C: Fills up (x, y) and all connected pixels with color C. Point is zero based and color must be a letter.";
-    private static final int NUM_ARGUMENTS = 2;
+    private static final int NUM_ARGUMENTS = 3;
 
     private BucketFillTool tool = new BucketFillTool();
 
@@ -39,7 +39,7 @@ public class BucketFillCommand implements Command {
             throw new IllegalArgumentException("Point not specified correctly ");
 
         if (intParams.size() > NUM_ARGUMENTS)
-            throw new IllegalArgumentException("Too many numerical parameters, expecting only " + NUM_ARGUMENTS);
+            throw new IllegalArgumentException("Too many parameters, expecting only " + NUM_ARGUMENTS);
 
         params = params.trim();
         char fillColor = params.charAt(params.length()-1);

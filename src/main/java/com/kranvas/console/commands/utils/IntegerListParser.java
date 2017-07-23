@@ -16,7 +16,6 @@ public class IntegerListParser {
         return Arrays
                 .stream(intListAsString.trim().split("\\s+"))
                 .map(IntegerListParser::parseInteger)
-                .filter(Objects::nonNull)
                 .collect(Collectors.toList());
     }
 
