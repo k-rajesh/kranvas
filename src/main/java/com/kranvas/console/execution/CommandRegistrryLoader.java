@@ -5,8 +5,8 @@ import com.kranvas.console.commands.impl.*;
 /**
  * Initializes the command registry with known commands
  */
-class CommandRegistrryLoader {
-    static CommandRegistry load() {
+public class CommandRegistrryLoader {
+    public static CommandRegistry load() {
         CommandRegistry registry = new CommandRegistry();
         registry.register(new HelpCommand());
         registry.register(new CreateCanvasCommand());

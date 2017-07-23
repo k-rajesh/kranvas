@@ -1,15 +1,21 @@
 package com.kranvas.console.execution;
 
 import com.kranvas.console.commands.Command;
-import com.kranvas.console.rendering.ImageToStringRenderer;
+import com.kranvas.console.rendering.CanvasConsoleRenderer;
 
 /**
  * Executes commands given as strings
  */
 public class Executor {
-    private CommandRegistry commandRegistry = CommandRegistrryLoader.load();
-    private ExecutionContext executionContext = new ExecutionContext();
-    private ImageToStringRenderer imageToStringRenderer = new ImageToStringRenderer();
+    private final CommandRegistry commandRegistry;
+    private final ExecutionContext executionContext;
+    private final CanvasConsoleRenderer canvasConsoleRenderer;
+
+    public Executor(CommandRegistry commandRegistry, ExecutionContext executionContext, CanvasConsoleRenderer canvasConsoleRenderer) {
+        this.commandRegistry = commandRegistry;
+        this.executionContext = executionContext;
+        this.canvasConsoleRenderer = canvasConsoleRenderer;
+    }
 
     public ExecutionResult execute(String commandWithArg) {
         CommandNameAndArgs commandNameAndArgs = new CommandNameAndArgs(commandWithArg);
@@ -30,7 +36,7 @@ public class Executor {
             executionContext.setPrintCanvasRequested(false);
             if (sb.length() > 0)
                 sb.append(System.lineSeparator());
-            sb.append(imageToStringRenderer.render(executionContext.getCanvas().getImage()));
+            sb.append(canvasConsoleRenderer.render(executionContext.getCanvas()));
         }
     }
 

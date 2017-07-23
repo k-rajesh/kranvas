@@ -1,5 +1,6 @@
 package com.kranvas.console.rendering;
 
+import com.kranvas.core.Canvas;
 import com.kranvas.core.Image;
 import com.kranvas.core.Pixel;
 import com.kranvas.core.Point;
@@ -7,15 +8,16 @@ import com.kranvas.core.Point;
 /**
  * Renders an image as a string to print on the console
  */
-public class ImageToStringRenderer {
+public class CanvasConsoleRenderer {
     private static final char HORIZONTAL_BORDER_CHAR = '-';
     private static final char VERTICAL_BORDER_CHAR = '|';
     private static final char BLANK_PIXEL_CHAR = ' ';
 
-    public String render(Image image) {
-        if (image == null)
+    public String render(Canvas canvas) {
+        if (canvas == null)
             return null;
 
+        Image image = canvas.getImage();
         StringBuilder sb = new StringBuilder();
         printHorizontalBorder(image, sb);
         for(int v=0; v < image.getHeight(); v++) {

@@ -1,14 +1,17 @@
 package com.kranvas.console.rendering;
 
+import com.kranvas.core.Canvas;
 import com.kranvas.core.Image;
 import com.kranvas.core.Pixel;
 import com.kranvas.core.Point;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.mockito.Matchers.any;
-import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 class ImageToStringRendererTest {
@@ -39,28 +42,36 @@ class ImageToStringRendererTest {
             "|xxxxxx|" + System.lineSeparator() +
             "--------" + System.lineSeparator();
 
-    private ImageToStringRenderer sut = new ImageToStringRenderer();
-    private Pixel linePixel = mock(Pixel.class);
+    private CanvasConsoleRenderer sut = new CanvasConsoleRenderer();
+
+    @Mock
+    private Pixel linePixel;
+
+    @Mock private Image image;
+
+    @Mock private Canvas canvas;
 
     @BeforeEach
     void setUp() {
+        MockitoAnnotations.initMocks(this);
+        when(canvas.getImage()).thenReturn(image);
         when(linePixel.getColor()).thenReturn('x');
     }
 
     @Test
-    void null_image_produces_null_result() {
+    void null_canvas_produces_null_result() {
         assertNull(sut.render(null));
     }
 
     @Test
     void blank_2_by_3() {
-        Image image = mockImage(2, 3);
-        assertEquals(BLANK_2_BY_3_IMAGE, sut.render(image));
+        setUpImage(2, 3);
+        assertEquals(BLANK_2_BY_3_IMAGE, sut.render(canvas));
     }
 
     @Test
     void square_inside_square() {
-        Image image = mockImage(6, 6);
+        setUpImage(6, 6);
         when(image.getPixel(any())).thenAnswer(i -> {
             Point point = i.getArgumentAt(0, Point.class);
             return (
@@ -69,21 +80,19 @@ class ImageToStringRendererTest {
                     !(point.getY() == 2 && point.getX() == 2)
                    ) ? linePixel : null;
         });
-        assertEquals(SQUARE_INSIDE_SQUARE, sut.render(image));
+        assertEquals(SQUARE_INSIDE_SQUARE, sut.render(canvas));
     }
 
     @Test
     void full_image() {
-        Image image = mockImage(6, 6);
+        setUpImage(6, 6);
         when(image.getPixel(any())).thenReturn(linePixel);
-        assertEquals(FULL_IMAGE, sut.render(image));
+        assertEquals(FULL_IMAGE, sut.render(canvas));
     }
 
-    private Image mockImage(int width, int height) {
-        Image image = mock(Image.class);
+    private void setUpImage(int width, int height) {
         when(image.getWidth()).thenReturn(width);
         when(image.getHeight()).thenReturn(height);
         when(image.getPixel(any())).thenReturn(null);
-        return image;
     }
 }
