@@ -13,7 +13,7 @@
     <dependencies>
         <dependency>
             <groupId>com.kranvas</groupId>
-            <artifactId>com.kronos.core</artifactId>
+            <artifactId>com.kranvas.core</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>

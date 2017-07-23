@@ -1,110 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dbfde380-fd54-4266-8ea5-85cc58665b99" name="Default" comment="Divided into a multi module maven project">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_8_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_core_2_8_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_slf4j_impl_2_8_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_24.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/console/console.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/console/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/Application.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/console/src/main/resources/log4j2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/core.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/core/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tools/tools.iml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/console/EntryPoint.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/kranvas/console/EntryPoint.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/kranvas/core/Canvas.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/kranvas/tools/Tool.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/kranvas/tools/line/LineTool.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/kranvas/tools/line/LineToolParams.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/kranvas/validations/ValidateAllChain.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/kranvas/validations/ValidateAnyChain.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/kranvas/validations/Validation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/kranvas/validations/ValidationChain.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/kranvas/validations/ValidationResult.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/kranvas/validations/impl/HorizontalLineValidation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/kranvas/validations/impl/LineValidation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/kranvas/validations/impl/NonNegativeNumberValidation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/kranvas/validations/impl/NumberWithinRangeValidation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/kranvas/validations/impl/PointWithinImageValidation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/kranvas/validations/impl/VerticalLineValidation.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/kranvas/tools/line/LineToolParamsTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/kranvas/tools/line/LineToolTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/kranvas/validations/ValidateChainTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/kranvas/validations/impl/HorizontalLineValidationTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/kranvas/validations/impl/NonNegativeNumberValidationTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/kranvas/validations/impl/NumberWithinRangeValidationTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/kranvas/validations/impl/PointWithinImageValidationTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/com/kranvas/validations/impl/VerticalLineValidationTest.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/Command.java" afterPath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/commands/Command.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/BucketFillCommand.java" afterPath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/commands/impl/BucketFillCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/CreateCanvasCommand.java" afterPath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/commands/impl/CreateCanvasCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/HelpCommand.java" afterPath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/commands/impl/HelpCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/LineCommand.java" afterPath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/commands/impl/LineCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/NumericalArgumentCommand.java" afterPath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/commands/impl/NumericalArgumentCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/QuitCommand.java" afterPath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/commands/impl/QuitCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/RectangleCommand.java" afterPath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/commands/impl/RectangleCommand.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/utils/IntegerListParser.java" afterPath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/commands/utils/IntegerListParser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/console/execution/CommandRegistrryLoader.java" afterPath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/execution/CommandRegistrryLoader.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/console/execution/CommandRegistry.java" afterPath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/execution/CommandRegistry.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/console/execution/ExecutionContext.java" afterPath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/execution/ExecutionContext.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/console/execution/ExecutionResult.java" afterPath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/execution/ExecutionResult.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/console/execution/Executor.java" afterPath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/execution/Executor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/console/rendering/CanvasConsoleRenderer.java" afterPath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/rendering/CanvasConsoleRenderer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/core/Canvas.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/kranvas/core/Canvas.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/core/Image.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/kranvas/core/Image.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/core/Pixel.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/kranvas/core/Pixel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/core/Point.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/kranvas/core/Point.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/core/impl/BitmapImage.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/kranvas/core/impl/BitmapImage.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/tools/Tool.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/kranvas/core/Tool.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/tools/bucketfill/BucketFillTool.java" afterPath="$PROJECT_DIR$/tools/src/main/java/com/kranvas/tools/bucketfill/BucketFillTool.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/tools/bucketfill/BucketFillToolParams.java" afterPath="$PROJECT_DIR$/tools/src/main/java/com/kranvas/tools/bucketfill/BucketFillToolParams.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/tools/line/LineTool.java" afterPath="$PROJECT_DIR$/tools/src/main/java/com/kranvas/tools/line/LineTool.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/tools/line/LineToolParams.java" afterPath="$PROJECT_DIR$/tools/src/main/java/com/kranvas/tools/line/LineToolParams.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/tools/utils/BucketFiller.java" afterPath="$PROJECT_DIR$/tools/src/main/java/com/kranvas/tools/utils/BucketFiller.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/validations/ValidateAllChain.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/kranvas/validations/ValidateAllChain.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/validations/ValidateAnyChain.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/kranvas/validations/ValidateAnyChain.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/validations/Validation.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/kranvas/validations/Validation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/validations/ValidationChain.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/kranvas/validations/ValidationChain.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/validations/ValidationResult.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/kranvas/validations/ValidationResult.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/validations/impl/HorizontalLineValidation.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/kranvas/validations/impl/HorizontalLineValidation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/validations/impl/LineValidation.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/kranvas/validations/impl/LineValidation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/validations/impl/NonNegativeNumberValidation.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/kranvas/validations/impl/NonNegativeNumberValidation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/validations/impl/NumberWithinRangeValidation.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/kranvas/validations/impl/NumberWithinRangeValidation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/validations/impl/PointWithinImageValidation.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/kranvas/validations/impl/PointWithinImageValidation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/validations/impl/VerticalLineValidation.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/kranvas/validations/impl/VerticalLineValidation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/kranvas/console/commands/impl/BucketFillCommandTest.java" afterPath="$PROJECT_DIR$/console/src/test/java/com/kranvas/console/commands/impl/BucketFillCommandTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/kranvas/console/commands/impl/CreateCanvasCommandTest.java" afterPath="$PROJECT_DIR$/console/src/test/java/com/kranvas/console/commands/impl/CreateCanvasCommandTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/kranvas/console/commands/impl/HelpCommandTest.java" afterPath="$PROJECT_DIR$/console/src/test/java/com/kranvas/console/commands/impl/HelpCommandTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/kranvas/console/commands/impl/LineCommandTest.java" afterPath="$PROJECT_DIR$/console/src/test/java/com/kranvas/console/commands/impl/LineCommandTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/kranvas/console/commands/impl/QuitCommandTest.java" afterPath="$PROJECT_DIR$/console/src/test/java/com/kranvas/console/commands/impl/QuitCommandTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/kranvas/console/commands/impl/RectangleCommandTest.java" afterPath="$PROJECT_DIR$/console/src/test/java/com/kranvas/console/commands/impl/RectangleCommandTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/kranvas/console/commands/utils/IntegerListParserTest.java" afterPath="$PROJECT_DIR$/console/src/test/java/com/kranvas/console/commands/utils/IntegerListParserTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/kranvas/console/execution/CommandRegistryTest.java" afterPath="$PROJECT_DIR$/console/src/test/java/com/kranvas/console/execution/CommandRegistryTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/kranvas/console/execution/ExecutorTest.java" afterPath="$PROJECT_DIR$/console/src/test/java/com/kranvas/console/execution/ExecutorTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/kranvas/console/rendering/ImageToStringRendererTest.java" afterPath="$PROJECT_DIR$/console/src/test/java/com/kranvas/console/rendering/ImageToStringRendererTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/kranvas/core/PixelTest.java" afterPath="$PROJECT_DIR$/core/src/test/java/com/kranvas/core/PixelTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/kranvas/core/PointTest.java" afterPath="$PROJECT_DIR$/core/src/test/java/com/kranvas/core/PointTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/kranvas/core/impl/BitmapImageTest.java" afterPath="$PROJECT_DIR$/core/src/test/java/com/kranvas/core/impl/BitmapImageTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/kranvas/tools/bucketfill/BucketFillToolParamsTest.java" afterPath="$PROJECT_DIR$/tools/src/test/java/com/kranvas/tools/bucketfill/BucketFillToolParamsTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/kranvas/tools/bucketfill/BucketFillToolTest.java" afterPath="$PROJECT_DIR$/tools/src/test/java/com/kranvas/tools/bucketfill/BucketFillToolTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/kranvas/tools/line/LineToolParamsTest.java" afterPath="$PROJECT_DIR$/tools/src/test/java/com/kranvas/tools/line/LineToolParamsTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/kranvas/tools/line/LineToolTest.java" afterPath="$PROJECT_DIR$/tools/src/test/java/com/kranvas/tools/line/LineToolTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/kranvas/tools/utils/BucketFillerTest.java" afterPath="$PROJECT_DIR$/tools/src/test/java/com/kranvas/tools/utils/BucketFillerTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/kranvas/tools/utils/RectangleDrawerTest.java" afterPath="$PROJECT_DIR$/tools/src/test/java/com/kranvas/tools/utils/RectangleDrawerTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/kranvas/validations/ValidateChainTest.java" afterPath="$PROJECT_DIR$/core/src/test/java/com/kranvas/validations/ValidateChainTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/kranvas/validations/impl/HorizontalLineValidationTest.java" afterPath="$PROJECT_DIR$/core/src/test/java/com/kranvas/validations/impl/HorizontalLineValidationTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/kranvas/validations/impl/NonNegativeNumberValidationTest.java" afterPath="$PROJECT_DIR$/core/src/test/java/com/kranvas/validations/impl/NonNegativeNumberValidationTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/kranvas/validations/impl/NumberWithinRangeValidationTest.java" afterPath="$PROJECT_DIR$/core/src/test/java/com/kranvas/validations/impl/NumberWithinRangeValidationTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/kranvas/validations/impl/PointWithinImageValidationTest.java" afterPath="$PROJECT_DIR$/core/src/test/java/com/kranvas/validations/impl/PointWithinImageValidationTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/kranvas/validations/impl/VerticalLineValidationTest.java" afterPath="$PROJECT_DIR$/core/src/test/java/com/kranvas/validations/impl/VerticalLineValidationTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+    <list default="true" id="dbfde380-fd54-4266-8ea5-85cc58665b99" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/console/pom.xml" afterPath="$PROJECT_DIR$/console/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/pom.xml" afterPath="$PROJECT_DIR$/core/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/pom.xml" afterPath="$PROJECT_DIR$/tools/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -134,119 +35,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Image.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/kranvas/core/Image.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExecutorTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/src/test/java/com/kranvas/console/execution/ExecutorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="33" column="37" lean-forward="false" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommandRegistryTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/src/test/java/com/kranvas/console/execution/CommandRegistryTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-425">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreateCanvasCommandTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/src/test/java/com/kranvas/console/commands/impl/CreateCanvasCommandTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ValidationChain.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/com/kranvas/validations/ValidationChain.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExecutionContext.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/console/src/main/java/com/kranvas/console/execution/ExecutionContext.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-              <folding>
-                <element signature="e#485#486#0" expanded="true" />
-                <element signature="e#521#522#0" expanded="true" />
-                <element signature="e#580#581#0" expanded="true" />
-                <element signature="e#630#631#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="966">
-              <caret line="66" column="31" lean-forward="false" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="44" lean-forward="true" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/src/main/java/com/kranvas/console/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="21" column="48" lean-forward="true" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommandRegistrryLoader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/src/main/java/com/kranvas/console/execution/CommandRegistrryLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -267,6 +56,10 @@
       <find>For inp</find>
       <find>For inpu</find>
       <find>For input</find>
+      <find>k</find>
+      <find>kron</find>
+      <find>krono</find>
+      <find>kronos</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -317,8 +110,6 @@
         <option value="$PROJECT_DIR$/console/src/test/java/console/commands/impl/RectangleCommandTest.java" />
         <option value="$PROJECT_DIR$/tools/src/main/java/com/kranvas/tools/rectange/RectangleTool.java" />
         <option value="$PROJECT_DIR$/tools/src/main/java/com/kranvas/tools/bucketfill/BucketFillTool.java" />
-        <option value="$PROJECT_DIR$/core/pom.xml" />
-        <option value="$PROJECT_DIR$/tools/pom.xml" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/kranvas/validations/impl/HorizontalLineValidationTest.java" />
         <option value="$PROJECT_DIR$/core/src/test/java/com/kranvas/validations/impl/HorizontalLineValidationTest.java" />
         <option value="$PROJECT_DIR$/core/src/test/java/com/kranvas/core/CanvasTest.java" />
@@ -327,11 +118,13 @@
         <option value="$PROJECT_DIR$/console/src/test/java/console/execution/CommandRegistryTest.java" />
         <option value="$PROJECT_DIR$/console/src/test/java/console/commands/impl/CreateCanvasCommandTest.java" />
         <option value="$PROJECT_DIR$/console/src/main/java/kranvas/console/Application.java" />
-        <option value="$PROJECT_DIR$/console/pom.xml" />
         <option value="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/Application.java" />
         <option value="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/execution/CommandRegistrryLoader.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/com/kranvas/validations/ValidationChain.java" />
         <option value="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/execution/ExecutionContext.java" />
+        <option value="$PROJECT_DIR$/core/pom.xml" />
+        <option value="$PROJECT_DIR$/tools/pom.xml" />
+        <option value="$PROJECT_DIR$/console/pom.xml" />
       </list>
     </option>
   </component>
@@ -403,6 +196,48 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kranvas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kranvas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kranvas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kranvas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kranvas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kranvas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="console" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -414,7 +249,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="last_opened_file_path" value="C:/cygwin64/bin/git.exe" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/console/src/main/java" />
@@ -893,7 +728,14 @@
       <option name="project" value="LOCAL" />
       <updated>1500815651916</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Divided into a multi module maven project">
+      <created>1500820520338</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1500820520338</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -930,7 +772,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -948,7 +789,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1014,14 +855,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/console/src/test/java/com/kranvas/console/rendering/ImageToStringRendererTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="32" column="48" lean-forward="true" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/console/src/main/java/com/kranvas/console/rendering/CanvasConsoleRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -1305,22 +1138,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tools/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/test/java/com/kranvas/validations/impl/VerticalLineValidationTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1411,22 +1228,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="966">
-          <caret line="66" column="31" lean-forward="false" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/console/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="44" lean-forward="true" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/console/src/main/java/com/kranvas/console/execution/CommandRegistrryLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1453,14 +1254,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/console/src/main/java/com/kranvas/console/execution/ExecutionContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="595">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding>
             <element signature="e#485#486#0" expanded="true" />
             <element signature="e#521#522#0" expanded="true" />
             <element signature="e#580#581#0" expanded="true" />
             <element signature="e#630#631#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="45" lean-forward="false" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/tools.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="53" column="55" lean-forward="false" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/console/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tools/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="46" lean-forward="false" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
