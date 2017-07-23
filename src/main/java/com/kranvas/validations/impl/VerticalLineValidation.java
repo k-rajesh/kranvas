@@ -1,6 +1,6 @@
 package com.kranvas.validations.impl;
 
-import com.kranvas.image.Point;
+import com.kranvas.core.Point;
 import com.kranvas.validations.ValidationResult;
 
 /**

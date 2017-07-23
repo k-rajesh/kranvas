@@ -1,6 +1,6 @@
 package com.kranvas.tools.line;
 
-import com.kranvas.image.Point;
+import com.kranvas.core.Point;
 
 /**
  * The parameters to draw a line

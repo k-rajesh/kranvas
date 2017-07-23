@@ -1,6 +1,6 @@
 package com.kranvas.tools;
 
-import com.kranvas.image.Image;
+import com.kranvas.core.Image;
 
 /**
  * A tool manipulates a given image

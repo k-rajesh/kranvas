@@ -1,11 +1,9 @@
 package com.kranvas.tools.line;
 
-import com.kranvas.image.Image;
-import com.kranvas.image.Point;
+import com.kranvas.core.Image;
+import com.kranvas.core.Point;
 import com.kranvas.tools.Tool;
 import com.kranvas.tools.utils.LineDrawer;
-import com.kranvas.validations.ValidateAllChain;
-import com.kranvas.validations.ValidateAnyChain;
 import com.kranvas.validations.Validation;
 import com.kranvas.validations.ValidationResult;
 import com.kranvas.validations.impl.HorizontalLineValidation;

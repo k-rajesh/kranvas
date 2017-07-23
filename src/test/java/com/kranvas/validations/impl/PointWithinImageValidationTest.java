@@ -1,7 +1,7 @@
 package com.kranvas.validations.impl;
 
-import com.kranvas.image.Image;
-import com.kranvas.image.Point;
+import com.kranvas.core.Image;
+import com.kranvas.core.Point;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

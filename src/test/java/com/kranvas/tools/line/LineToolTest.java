@@ -1,12 +1,11 @@
 package com.kranvas.tools.line;
 
-import com.kranvas.image.Image;
-import com.kranvas.image.Pixel;
-import com.kranvas.image.Point;
+import com.kranvas.core.Image;
+import com.kranvas.core.Pixel;
+import com.kranvas.core.Point;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;
-import sun.text.CodePointIterator;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;

@@ -1,6 +1,6 @@
 package com.kranvas.tools.line;
 
-import com.kranvas.image.Point;
+import com.kranvas.core.Point;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -19,15 +19,15 @@ public class ValidationResult {
 
     /**
      * Whether the validation was successful
-     * @return true if success, false if failure
+     * @return true if success, false if output
      */
     public boolean isValid() {
         return isValid;
     }
 
     /**
-     * The reason for the failure, if any
-     * @return string containing the reason for failure
+     * The reason for the output, if any
+     * @return string containing the reason for output
      */
     public String getReason() {
         return reason;

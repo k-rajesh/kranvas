@@ -1,8 +1,8 @@
 package com.kranvas.tools.utils;
 
-import com.kranvas.image.Image;
-import com.kranvas.image.Pixel;
-import com.kranvas.image.Point;
+import com.kranvas.core.Image;
+import com.kranvas.core.Pixel;
+import com.kranvas.core.Point;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
