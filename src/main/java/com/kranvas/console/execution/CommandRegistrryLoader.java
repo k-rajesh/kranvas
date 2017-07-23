@@ -12,6 +12,7 @@ class CommandRegistrryLoader {
         registry.register(new CreateCanvasCommand());
         registry.register(new LineCommand());
         registry.register(new RectangleCommand());
+        registry.register(new BucketFillCommand());
         registry.register(new QuitCommand());
         return registry;
     }
