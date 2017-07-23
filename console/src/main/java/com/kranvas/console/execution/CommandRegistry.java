@@ -9,7 +9,7 @@ import java.util.Map;
  * Keeps track of the available commands
  */
 class CommandRegistry {
-    private Map<String, Command>  registry = new LinkedHashMap<>();
+    private final Map<String, Command>  registry = new LinkedHashMap<>();
     private String usage;
 
     void register(Command command) {

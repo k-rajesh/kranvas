@@ -1,17 +1,13 @@
 package com.kranvas.console.commands.impl;
 
 import com.kranvas.console.commands.Command;
-import com.kranvas.console.commands.utils.IntegerListParser;
-import com.kranvas.console.execution.ExecutionContext;
-
-import java.util.List;
 
 /**
  * Base class for all commands that accept numerical arguments
  */
 abstract class BaseCommand implements Command {
-    private String shortName;
-    private String description;
+    private final String shortName;
+    private final String description;
 
     BaseCommand(String shortName, String description) {
         this.shortName = shortName;

@@ -8,7 +8,7 @@ import com.kranvas.validations.ValidationResult;
  * Validates that the given two points represent a line
  */
 public class LineValidation extends Validation {
-    Point from, to;
+    final Point from, to;
 
     LineValidation(Point from, Point to) {
         this.from = from;

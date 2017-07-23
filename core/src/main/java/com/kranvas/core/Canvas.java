@@ -3,7 +3,7 @@ package com.kranvas.core;
 import com.kranvas.core.impl.BitmapImage;
 
 public class Canvas {
-    private Image image;
+    private final Image image;
 
     public Canvas(int width, int height, char blankCellColor) {
         image = new BitmapImage(width, height, blankCellColor);

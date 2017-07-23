@@ -11,7 +11,7 @@ class BitmapImageTest {
     private static final int HEIGHT = 10;
     private static final char BLANK_PIXEL_COLOR = ' ';
 
-    private BitmapImage sut = new BitmapImage(WIDTH, HEIGHT, BLANK_PIXEL_COLOR);
+    private final BitmapImage sut = new BitmapImage(WIDTH, HEIGHT, BLANK_PIXEL_COLOR);
 
     @Test
     void get_width() {

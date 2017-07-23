@@ -18,7 +18,7 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 class RectangleCommandTest {
-    private RectangleCommand sut = new RectangleCommand();
+    private final RectangleCommand sut = new RectangleCommand();
     @Mock private Canvas canvas;
     @Mock private ExecutionContext executionContext;
 
@@ -30,12 +30,12 @@ class RectangleCommandTest {
 
     @Test
     void fewer_params_than_required() {
-        verifyIllegarlArugmentException("1 2 3", "Too few");
+        verifyIllegalArugmentException("1 2 3", "Too few");
     }
 
     @Test
     void too_many_params_than_required() {
-        verifyIllegarlArugmentException("1 2 3 5 6", "Too many");
+        verifyIllegalArugmentException("1 2 3 5 6", "Too many");
     }
 
     @Test
@@ -48,7 +48,7 @@ class RectangleCommandTest {
         verify(executionContext, times(1)).setPrintCanvasRequested(true);
     }
 
-    private void verifyIllegarlArugmentException(String arguments, String message) {
+    private void verifyIllegalArugmentException(String arguments, String message) {
         Throwable exception = assertThrows(IllegalArgumentException.class, () -> sut.execute(executionContext, arguments));
         assertTrue(exception.getMessage().contains(message));
     }

@@ -13,7 +13,7 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
 class CreateCanvasCommandTest {
-    private CreateCanvasCommand sut = new CreateCanvasCommand();
+    private final CreateCanvasCommand sut = new CreateCanvasCommand();
     @Mock private ExecutionContext executionContext;
 
     @BeforeEach
@@ -23,57 +23,57 @@ class CreateCanvasCommandTest {
 
     @Test
     void params_not_provided() {
-        verifyIllegarlArugmentException(null, "Too few");
+        verifyIllegalArugmentException(null, "Too few");
     }
 
     @Test
     void empty_params_provided() {
-        verifyIllegarlArugmentException("", "Too few");
+        verifyIllegalArugmentException("", "Too few");
     }
 
     @Test
     void fewer_params_than_required() {
-        verifyIllegarlArugmentException("1", "Too few");
+        verifyIllegalArugmentException("1", "Too few");
     }
 
     @Test
     void params_with_unexpected_letters() {
-        verifyIllegarlArugmentException("1 a 2", "Too many");
+        verifyIllegalArugmentException("1 a 2", "Too many");
     }
 
     @Test
     void too_many_params_than_required() {
-        verifyIllegarlArugmentException("1 2 3", "Too many");
+        verifyIllegalArugmentException("1 2 3", "Too many");
     }
 
     @Test
     void width_beyond_limit_than_required() {
-        verifyIllegarlArugmentException("100 1", "size should be between");
+        verifyIllegalArugmentException("100 1", "size should be between");
     }
 
     @Test
     void height_beyond_limit_than_required() {
-        verifyIllegarlArugmentException("1 100", "size should be between");
+        verifyIllegalArugmentException("1 100", "size should be between");
     }
 
     @Test
     void width_is_zero() {
-        verifyIllegarlArugmentException("0 10", "size should be between");
+        verifyIllegalArugmentException("0 10", "size should be between");
     }
 
     @Test
     void height_is_zero() {
-        verifyIllegarlArugmentException("10 0", "size should be between");
+        verifyIllegalArugmentException("10 0", "size should be between");
     }
 
     @Test
     void width_is_negative() {
-        verifyIllegarlArugmentException("-5 5", "size should be between");
+        verifyIllegalArugmentException("-5 5", "size should be between");
     }
 
     @Test
     void height_is_negative() {
-        verifyIllegarlArugmentException("5 -5", "size should be between");
+        verifyIllegalArugmentException("5 -5", "size should be between");
     }
 
     @Test
@@ -95,7 +95,7 @@ class CreateCanvasCommandTest {
         verify(executionContext, times(1)).setPrintCanvasRequested(true);
     }
 
-    private void verifyIllegarlArugmentException(String arguments, String message) {
+    private void verifyIllegalArugmentException(String arguments, String message) {
         Throwable exception = assertThrows(IllegalArgumentException.class, () -> sut.execute(executionContext, arguments));
         assertTrue(exception.getMessage().contains(message));
     }

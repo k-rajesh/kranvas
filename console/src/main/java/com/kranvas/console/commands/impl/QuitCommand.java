@@ -15,6 +15,6 @@ public class QuitCommand extends BaseCommand {
 
     @Override
     public void execute(ExecutionContext executionContext, String params) {
-        executionContext.setExitRequested(true);
+        executionContext.requestForExit();
     }
 }

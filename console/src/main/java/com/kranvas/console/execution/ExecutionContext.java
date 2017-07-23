@@ -23,8 +23,8 @@ public class ExecutionContext {
         return exitRequested;
     }
 
-    public void setExitRequested(boolean exitRequested) {
-        this.exitRequested = exitRequested;
+    public void requestForExit() {
+        this.exitRequested = true;
     }
 
     boolean isPrintCanvasRequested() {

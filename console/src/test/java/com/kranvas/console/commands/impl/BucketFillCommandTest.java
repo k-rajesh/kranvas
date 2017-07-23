@@ -16,7 +16,7 @@ import static org.mockito.Matchers.isA;
 import static org.mockito.Mockito.*;
 
 class BucketFillCommandTest {
-    private BucketFillCommand sut = new BucketFillCommand();
+    private final BucketFillCommand sut = new BucketFillCommand();
     @Mock private Canvas canvas;
     @Mock private ExecutionContext executionContext;
 
@@ -28,12 +28,12 @@ class BucketFillCommandTest {
 
     @Test
     void fewer_params_than_required() {
-        verifyIllegarlArugmentException("1", "not specified correctly");
+        verifyIllegalArugmentException("1", "not specified correctly");
     }
 
     @Test
     void too_many_params_than_required() {
-        verifyIllegarlArugmentException("1 2 3 5 6 c", "Too many");
+        verifyIllegalArugmentException("1 2 3 5 6 c", "Too many");
     }
 
     @Test
@@ -46,7 +46,7 @@ class BucketFillCommandTest {
         verify(executionContext, times(1)).setPrintCanvasRequested(true);
     }
 
-    private void verifyIllegarlArugmentException(String arguments, String message) {
+    private void verifyIllegalArugmentException(String arguments, String message) {
         Throwable exception = assertThrows(IllegalArgumentException.class, () -> sut.execute(executionContext, arguments));
         assertTrue(exception.getMessage().contains(message));
     }

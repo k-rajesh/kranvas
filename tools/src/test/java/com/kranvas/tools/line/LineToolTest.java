@@ -17,7 +17,7 @@ class LineToolTest {
     private static final int IMAGE_HEIGHT = 20;
     private static final char EXPECTED_LINE_COLOR = 'x';
 
-    private LineTool sut = new LineTool();
+    private final LineTool sut = new LineTool();
 
     private Image mockImage;
     private Pixel mockPixel;

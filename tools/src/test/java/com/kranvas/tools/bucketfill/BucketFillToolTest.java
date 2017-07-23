@@ -3,8 +3,6 @@ package com.kranvas.tools.bucketfill;
 import com.kranvas.core.Image;
 import com.kranvas.core.Pixel;
 import com.kranvas.core.Point;
-import com.kranvas.tools.rectange.RectangleTool;
-import com.kranvas.tools.rectange.RectangleToolParams;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;
@@ -20,7 +18,7 @@ class BucketFillToolTest {
     private static final char FILL_COLOR = 'x';
     private static final char BLANK_PIXEL_COLOR = ' ';
 
-    private BucketFillTool sut = new BucketFillTool();
+    private final BucketFillTool sut = new BucketFillTool();
 
     private Image mockImage;
     private Pixel mockPixel;

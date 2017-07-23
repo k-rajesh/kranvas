@@ -10,7 +10,7 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
 class QuitCommandTest {
-    private QuitCommand sut = new QuitCommand();
+    private final QuitCommand sut = new QuitCommand();
 
     @Mock private ExecutionContext executionContext;
 
@@ -22,7 +22,7 @@ class QuitCommandTest {
     @Test
     void quit_requests_system_quit() {
         sut.execute(executionContext, "");
-        verify(executionContext, times(1)).setExitRequested(true);
+        verify(executionContext, times(1)).requestForExit();
     }
 
 }

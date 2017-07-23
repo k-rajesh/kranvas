@@ -7,7 +7,7 @@ import com.kranvas.validations.ValidationResult;
  * Verifies that the given number is non-negative
  */
 public class NonNegativeNumberValidation extends Validation {
-    private int candidate;
+    private final int candidate;
 
     private NonNegativeNumberValidation(int candidate) {
         this.candidate = candidate;

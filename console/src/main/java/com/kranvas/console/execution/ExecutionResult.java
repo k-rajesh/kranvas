@@ -4,8 +4,8 @@ package com.kranvas.console.execution;
  * Represents the result of a validation
  */
 public class ExecutionResult {
-    private boolean quit;
-    private String output;
+    private final boolean quit;
+    private final String output;
 
     static ExecutionResult output(String reason) {
         return new ExecutionResult(reason, false);

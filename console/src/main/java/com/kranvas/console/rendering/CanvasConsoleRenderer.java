@@ -38,11 +38,8 @@ public class CanvasConsoleRenderer {
     }
 
     private void printHorizontalBorder(Image image, StringBuilder sb) {
-        String horizontalLine = repeatChar(HORIZONTAL_BORDER_CHAR, image.getWidth() + 2);
+        String horizontalLine = new String(new char[image.getWidth() + 2]).replace('\0', HORIZONTAL_BORDER_CHAR);
         sb.append(horizontalLine).append(System.lineSeparator());
     }
 
-    private static String repeatChar(char c, int repeatCount) {
-        return new String(new char[repeatCount]).replace('\0', c);
-    }
 }

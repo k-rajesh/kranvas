@@ -15,7 +15,7 @@ public class RectangleCommand extends NumericalArgumentCommand {
     private static final String DESCRIPTION = "R x1 y1 x2 y2: Draws a rectangle with (x1, y1) as top left corner and (x2, y2) as bottom right corner. Points are zero-based.";
     private static final int NUM_ARGUMENTS = 4;
 
-    private RectangleTool tool = new RectangleTool();
+    private final RectangleTool tool = new RectangleTool();
 
     public RectangleCommand() {
         super(SHORT_NAME, DESCRIPTION, NUM_ARGUMENTS);

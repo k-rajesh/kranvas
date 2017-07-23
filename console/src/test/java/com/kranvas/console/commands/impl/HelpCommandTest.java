@@ -10,7 +10,7 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
 class HelpCommandTest {
-    private HelpCommand sut = new HelpCommand();
+    private final HelpCommand sut = new HelpCommand();
 
     @Mock private ExecutionContext executionContext;
 

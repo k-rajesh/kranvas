@@ -19,7 +19,7 @@ public class LineCommand extends NumericalArgumentCommand {
         super(SHORT_NAME, DESCRIPTION, NUM_ARGUMENTS);
     }
 
-    private LineTool tool = new LineTool();
+    private final LineTool tool = new LineTool();
 
     @Override
     public void execute(ExecutionContext executionContext, List<Integer> intParams) {

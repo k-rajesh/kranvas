@@ -17,7 +17,7 @@ class RectangleToolTest {
     private static final int IMAGE_HEIGHT = 20;
     private static final char EXPECTED_LINE_COLOR = 'x';
 
-    private RectangleTool sut = new RectangleTool();
+    private final RectangleTool sut = new RectangleTool();
 
     private Image mockImage;
     private Pixel mockPixel;
@@ -58,15 +58,6 @@ class RectangleToolTest {
         verify(mockImage, times(1)).getPixel(bottomRight);
 
         verify(mockPixel, times(4)).setColor(EXPECTED_LINE_COLOR);
-    }
-
-    private void verify4By4RectangleDrawn(Point topLeft, Point topRight, Point bottomLeft, Point bottomRight) {
-        verify(mockImage, times(1)).getPixel(topLeft);
-        verify(mockImage, times(1)).getPixel(topRight);
-        verify(mockImage, times(1)).getPixel(bottomLeft);
-        verify(mockImage, times(1)).getPixel(bottomRight);
-
-        verify(mockPixel, times(4*4)).setColor(EXPECTED_LINE_COLOR);
     }
 
     @Test

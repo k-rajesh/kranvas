@@ -16,7 +16,7 @@ import static org.mockito.Matchers.isA;
 import static org.mockito.Mockito.*;
 
 class LineCommandTest {
-    private LineCommand sut = new LineCommand();
+    private final LineCommand sut = new LineCommand();
     @Mock private Canvas canvas;
     @Mock private ExecutionContext executionContext;
 
@@ -28,12 +28,12 @@ class LineCommandTest {
 
     @Test
     void fewer_params_than_required() {
-        verifyIllegarlArugmentException("1 2 3", "Too few");
+        verifyIllegalArugmentException("1 2 3", "Too few");
     }
 
     @Test
     void too_many_params_than_required() {
-        verifyIllegarlArugmentException("1 2 3 5 6", "Too many");
+        verifyIllegalArugmentException("1 2 3 5 6", "Too many");
     }
 
     @Test
@@ -46,7 +46,7 @@ class LineCommandTest {
         verify(executionContext, times(1)).setPrintCanvasRequested(true);
     }
 
-    private void verifyIllegarlArugmentException(String arguments, String message) {
+    private void verifyIllegalArugmentException(String arguments, String message) {
         Throwable exception = assertThrows(IllegalArgumentException.class, () -> sut.execute(executionContext, arguments));
         assertTrue(exception.getMessage().contains(message));
     }

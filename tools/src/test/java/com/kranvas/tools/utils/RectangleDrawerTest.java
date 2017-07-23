@@ -20,7 +20,7 @@ class RectangleDrawerTest {
     }
 
     @Test
-    void draw_2_by_3_rectange() {
+    void draw_2_by_3_rectangle() {
         RectangleDrawer.drawRectangle(image, Point.at(0, 0), Point.at(1, 2));
         verify(image, times(2*3)).getPixel(any());
     }

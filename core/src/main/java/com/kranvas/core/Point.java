@@ -8,7 +8,7 @@ import com.kranvas.validations.impl.NonNegativeNumberValidation;
  * Represents a coordinate on a 2D plane
  */
 public class Point implements Comparable<Point> {
-    private int x, y;
+    private final int x, y;
 
     private Point(int x, int y) {
         this.x = x;

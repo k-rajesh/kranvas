@@ -4,8 +4,8 @@ package com.kranvas.validations;
  * Represents the result of a validation
  */
 public class ValidationResult {
-    private boolean isValid;
-    private String reason;
+    private final boolean isValid;
+    private final String reason;
 
     public static final ValidationResult OK = new ValidationResult(true, "");
     public static ValidationResult failure(String reason) {

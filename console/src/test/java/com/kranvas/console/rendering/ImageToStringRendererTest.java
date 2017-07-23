@@ -42,7 +42,7 @@ class ImageToStringRendererTest {
             "|xxxxxx|" + System.lineSeparator() +
             "--------" + System.lineSeparator();
 
-    private CanvasConsoleRenderer sut = new CanvasConsoleRenderer();
+    private final CanvasConsoleRenderer sut = new CanvasConsoleRenderer();
 
     @Mock
     private Pixel linePixel;

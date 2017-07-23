@@ -9,7 +9,7 @@ import java.util.List;
  * Base class for all commands that accept numerical arguments
  */
 abstract class NumericalArgumentCommand extends BaseCommand {
-    private int numberOfArguments;
+    private final int numberOfArguments;
 
     NumericalArgumentCommand(String shortName, String description, int numberOfArguments) {
         super(shortName, description);

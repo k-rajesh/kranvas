@@ -4,8 +4,8 @@ import com.kranvas.validations.Validation;
 import com.kranvas.validations.ValidationResult;
 
 public class NumberWithinRangeValidation extends Validation {
-    private int value;
-    private int leftInclusive, rightExclusive;
+    private final int value;
+    private final int leftInclusive, rightExclusive;
 
     private NumberWithinRangeValidation(int value, int leftInclusive, int rightExclusive) {
         this.value = value;

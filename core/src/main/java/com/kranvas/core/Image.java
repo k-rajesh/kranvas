@@ -9,8 +9,8 @@ import com.kranvas.validations.impl.NonNegativeNumberValidation;
  * Top Left corner is (0,0) and Bottom Right corner is (width-1, height-1)
  */
 public abstract class Image {
-    private int width;
-    private int height;
+    private final int width;
+    private final int height;
 
     protected Image(int width, int height) {
         this.width = width;

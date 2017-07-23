@@ -11,7 +11,7 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 class CommandRegistryTest {
-    private CommandRegistry sut = new CommandRegistry();
+    private final CommandRegistry sut = new CommandRegistry();
 
     @Mock
     private Command command;
@@ -23,26 +23,26 @@ class CommandRegistryTest {
 
     @Test
     void null_command_is_rejected() {
-        verifyIllegarlArugmentException(null, "null");
+        verifyIllegarArugmentException(null, "null");
     }
 
     @Test
     void command_without_short_name_is_rejected() {
         when(command.getShortName()).thenReturn(null);
-        verifyIllegarlArugmentException(command, "null");
+        verifyIllegarArugmentException(command, "null");
     }
 
     @Test
     void command_with_blank_short_name_is_rejected() {
         when(command.getShortName()).thenReturn("  ");
-        verifyIllegarlArugmentException(command, "blank");
+        verifyIllegarArugmentException(command, "blank");
     }
 
     @Test
     void duplicate_short_name_is_rejected() {
         when(command.getShortName()).thenReturn("X");
         sut.register(command);
-        verifyIllegarlArugmentException(command, "already taken");
+        verifyIllegarArugmentException(command, "already taken");
     }
 
     @Test
@@ -74,7 +74,7 @@ class CommandRegistryTest {
         sut.register(command);
     }
 
-    private void verifyIllegarlArugmentException(Command command, String message) {
+    private void verifyIllegarArugmentException(Command command, String message) {
         Throwable exception = assertThrows(IllegalArgumentException.class, () -> sut.register(command));
         assertTrue(exception.getMessage().contains(message));
     }

@@ -21,12 +21,12 @@ class NumberWithinRangeValidationTest {
     }
 
     @Test
-    void left_outer_range_is_rejectec() {
+    void left_outer_range_is_rejected() {
         assertFalse(NumberWithinRangeValidation.of(3, 5, 10).validate().isValid());
     }
 
     @Test
-    void right_outer_range_is_rejectec() {
+    void right_outer_range_is_rejected() {
         assertFalse(NumberWithinRangeValidation.of(13, 5, 10).validate().isValid());
     }
 }

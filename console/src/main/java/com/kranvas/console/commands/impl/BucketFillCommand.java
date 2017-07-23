@@ -16,7 +16,7 @@ public class BucketFillCommand extends BaseCommand {
     private static final String DESCRIPTION = "B x y C: Fills up (x, y) and all connected pixels with color C. Point is zero based and color must be a letter.";
     private static final int NUM_ARGUMENTS = 3;
 
-    private BucketFillTool tool = new BucketFillTool();
+    private final BucketFillTool tool = new BucketFillTool();
 
     public BucketFillCommand() {
         super(SHORT_NAME, DESCRIPTION);

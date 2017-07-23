@@ -9,7 +9,7 @@ public class BucketFiller {
     private final Image image;
     private final Point start;
     private final char filColor;
-    private boolean[][] visisted;
+    private boolean[][] visited;
     private Stack<Point> toVisit;
     private char targetColor;
 
@@ -28,7 +28,7 @@ public class BucketFiller {
     }
 
     public void fill() {
-        visisted = new boolean[image.getWidth()][image.getHeight()];
+        visited = new boolean[image.getWidth()][image.getHeight()];
         toVisit = new Stack<>();
         scheduleIfSafe(start);
 
@@ -63,12 +63,12 @@ public class BucketFiller {
         return
             point.getX() < image.getWidth() &&
             point.getY() < image.getHeight() &&
-            !visisted[point.getX()][point.getY()] &&
+            !visited[point.getX()][point.getY()] &&
             targetColor == image.getPixel(point).getColor();
     }
 
     private void schedulePoint(Point point) {
         toVisit.push(point);
-        visisted[point.getX()][point.getY()] = true;
+        visited[point.getX()][point.getY()] = true;
     }
 }

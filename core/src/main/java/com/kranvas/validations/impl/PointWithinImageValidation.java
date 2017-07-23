@@ -9,8 +9,8 @@ import com.kranvas.validations.ValidationResult;
  * Verifies that the given point is within the given image
  */
 public class PointWithinImageValidation extends Validation {
-    private Image image;
-    private Point point;
+    private final Image image;
+    private final Point point;
 
     private PointWithinImageValidation(Image image, Point point) {
         this.image = image;
