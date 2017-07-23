@@ -10,7 +10,7 @@ class CanvasTest {
     @Test
     @SuppressWarnings("unchedked")
     void canvas_applies_tool_to_image() {
-        Canvas canvas = new Canvas(5, 10);
+        Canvas canvas = new Canvas(5, 10, ' ');
         Tool<String> mockTool = (Tool<String>)mock(Tool.class);
         canvas.applyTool(mockTool, "Test param");
         verify(mockTool, times(1)).perform(canvas.getImage(), "Test param");
@@ -18,7 +18,7 @@ class CanvasTest {
 
     @Test
     void canvas_tool_is_null() {
-        Canvas canvas = new Canvas(5, 10);
+        Canvas canvas = new Canvas(5, 10, ' ');
         assertThrows(IllegalArgumentException.class, () -> canvas.applyTool(null, null));
     }
 }

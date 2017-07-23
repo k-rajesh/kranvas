@@ -1,6 +1,5 @@
 package com.kranvas.console.commands.impl;
 
-import com.kranvas.console.commands.Command;
 import com.kranvas.console.commands.utils.IntegerListParser;
 import com.kranvas.console.execution.ExecutionContext;
 import com.kranvas.core.Point;
@@ -12,21 +11,15 @@ import java.util.List;
 /**
  * Requests the system to quit the program
  */
-public class BucketFillCommand implements Command {
+public class BucketFillCommand extends BaseCommand {
     private static final String SHORT_NAME = "B";
     private static final String DESCRIPTION = "B x y C: Fills up (x, y) and all connected pixels with color C. Point is zero based and color must be a letter.";
     private static final int NUM_ARGUMENTS = 3;
 
     private BucketFillTool tool = new BucketFillTool();
 
-    @Override
-    public String getShortName() {
-        return SHORT_NAME;
-    }
-
-    @Override
-    public String getDescription() {
-        return DESCRIPTION;
+    public BucketFillCommand() {
+        super(SHORT_NAME, DESCRIPTION);
     }
 
     @Override

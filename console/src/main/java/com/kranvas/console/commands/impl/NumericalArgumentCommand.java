@@ -1,33 +1,19 @@
 package com.kranvas.console.commands.impl;
 
-import com.kranvas.console.commands.Command;
-import com.kranvas.console.execution.ExecutionContext;
 import com.kranvas.console.commands.utils.IntegerListParser;
+import com.kranvas.console.execution.ExecutionContext;
 
 import java.util.List;
 
 /**
  * Base class for all commands that accept numerical arguments
  */
-abstract class NumericalArgumentCommand implements Command {
-    private String shortName;
-    private String description;
+abstract class NumericalArgumentCommand extends BaseCommand {
     private int numberOfArguments;
 
     NumericalArgumentCommand(String shortName, String description, int numberOfArguments) {
-        this.shortName = shortName;
-        this.description = description;
+        super(shortName, description);
         this.numberOfArguments = numberOfArguments;
-    }
-
-    @Override
-    public String getShortName() {
-        return shortName;
-    }
-
-    @Override
-    public String getDescription() {
-        return description;
     }
 
     @Override

@@ -22,16 +22,6 @@ public class RectangleCommand extends NumericalArgumentCommand {
     }
 
     @Override
-    public String getShortName() {
-        return SHORT_NAME;
-    }
-
-    @Override
-    public String getDescription() {
-        return DESCRIPTION;
-    }
-
-    @Override
     public void execute(ExecutionContext executionContext, List<Integer> intParams) {
         if (executionContext.getCanvas() == null)
             throw new IllegalStateException("No canvas is open, please create one");
