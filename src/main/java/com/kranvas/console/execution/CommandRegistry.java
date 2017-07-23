@@ -8,20 +8,20 @@ import java.util.Map;
 /**
  * Keeps track of the available commands
  */
-public class CommandRegistry {
+class CommandRegistry {
     private Map<String, Command>  registry = new LinkedHashMap<>();
     private String usage;
 
-    public void register(Command command) {
+    void register(Command command) {
         validateCommand(command);
         registry.put(command.getShortName(), command);
     }
 
-    public Command findCommand(String shortName) {
+    Command findCommand(String shortName) {
         return registry.get(shortName);
     }
 
-    public String getUsage() {
+    String getUsage() {
         if (usage == null)
             usage = buildUsage();
         return usage;

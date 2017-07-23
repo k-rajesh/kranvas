@@ -1,7 +1,5 @@
 package com.kranvas.console.commands.impl;
 
-import com.kranvas.console.commands.Command;
-import com.kranvas.console.commands.utils.IntegerListParser;
 import com.kranvas.console.execution.ExecutionContext;
 import com.kranvas.core.Canvas;
 import com.kranvas.validations.Validation;
@@ -13,28 +11,19 @@ import java.util.List;
 /**
  * Creates a new instance of canvas
  */
-public class CreateCanvasCommand implements Command {
+public class CreateCanvasCommand extends NumericalArgumentCommand {
     private static final String SHORT_NAME = "C";
     private static final String DESCRIPTION = "Creates a canvas of the specified width and height";
     private static final int MAX_WIDTH = 80;
     private static final int MAX_HEIGHT = 40;
+    private static final int NUM_ARGUMENTS = 2;
 
-    @Override
-    public String getShortName() {
-        return SHORT_NAME;
+    public CreateCanvasCommand() {
+        super(SHORT_NAME, DESCRIPTION, NUM_ARGUMENTS);
     }
 
     @Override
-    public String getDescription() {
-        return DESCRIPTION;
-    }
-
-    @Override
-    public void execute(ExecutionContext executionContext, String params) {
-        List<Integer> intParams = IntegerListParser.parse(params);
-        if (intParams == null || intParams.size() < 2)
-            throw new IllegalArgumentException("Create canvas command missing mandatory arguments");
-
+    public void execute(ExecutionContext executionContext, List<Integer> intParams) {
         int width = intParams.get(0);
         int height = intParams.get(1);
 

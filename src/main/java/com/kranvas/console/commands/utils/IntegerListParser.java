@@ -10,11 +10,11 @@ import java.util.stream.Collectors;
  */
 public class IntegerListParser {
     public static List<Integer> parse(String intListAsString) {
-        if (intListAsString == null || intListAsString.length() == 0)
+        if (intListAsString == null || intListAsString.trim().length() == 0)
             return null;
 
         return Arrays
-                .stream(intListAsString.split("\\s+"))
+                .stream(intListAsString.trim().split("\\s+"))
                 .map(IntegerListParser::parseInteger)
                 .filter(Objects::nonNull)
                 .collect(Collectors.toList());

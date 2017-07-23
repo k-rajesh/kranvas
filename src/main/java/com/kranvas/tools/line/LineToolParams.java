@@ -21,11 +21,11 @@ public class LineToolParams {
         }
     }
 
-    Point getFrom() {
+    public Point getFrom() {
         return from;
     }
 
-    Point getTo() {
+    public Point getTo() {
         return to;
     }
 }
