@@ -12,7 +12,7 @@ import java.util.List;
  */
 public class LineCommand extends NumericalArgumentCommand {
     private static final String SHORT_NAME = "L";
-    private static final String DESCRIPTION = "Draws either a horizontal or vertical line between the two given points";
+    private static final String DESCRIPTION = "L x1 y1 x2 y2: Draws either a horizontal or vertical line between (x1, y1) and (x2, y2). All points are zero-based";
     private static final int NUM_ARGUMENTS = 4;
 
     public LineCommand() {
@@ -26,8 +26,8 @@ public class LineCommand extends NumericalArgumentCommand {
         if (executionContext.getCanvas() == null)
             throw new IllegalStateException("No canvas is open, please create one");
 
-        Point p1 = Point.at(intParams.get(0)-1, intParams.get(1)-1);
-        Point p2 = Point.at(intParams.get(2)-1, intParams.get(3)-1);
+        Point p1 = Point.at(intParams.get(0), intParams.get(1));
+        Point p2 = Point.at(intParams.get(2), intParams.get(3));
         LineToolParams lineToolParams = new LineToolParams(p1, p2);
         executionContext.getCanvas().applyTool(tool, lineToolParams);
         executionContext.setPrintCanvasRequested(true);
