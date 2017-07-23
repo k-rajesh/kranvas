@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbfde380-fd54-4266-8ea5-85cc58665b99" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/BucketFillCommand.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kranvas/tools/bucketfill/BucketFillTool.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kranvas/tools/bucketfill/BucketFillToolParams.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/kranvas/tools/utils/BucketFiller.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/kranvas/tools/utils/BucketFillerTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/console/execution/CommandRegistrryLoader.java" afterPath="$PROJECT_DIR$/src/main/java/com/kranvas/console/execution/CommandRegistrryLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/BucketFillCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/BucketFillCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/LineCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/LineCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/RectangleCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/RectangleCommand.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -49,11 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BucketFillTool.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BucketFillTool.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kranvas/tools/bucketfill/BucketFillTool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="476">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -72,8 +69,8 @@
       <file leaf-file-name="BucketFillCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/BucketFillCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state relative-caret-position="476">
+              <caret line="48" column="72" lean-forward="false" selection-start-line="48" selection-start-column="72" selection-end-line="48" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -101,21 +98,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommandRegistrryLoader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kranvas/console/execution/CommandRegistrryLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LineCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/LineCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="33" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="405">
+              <caret line="29" column="66" lean-forward="false" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -123,11 +110,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="RectangleCommand.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/RectangleCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="NumericalArgumentCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/NumericalArgumentCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="374">
+              <caret line="39" column="57" lean-forward="true" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -211,8 +208,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/kranvas/tools/utils/RectangleDrawer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/Command.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/CreateCanvasCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/LineCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/RectangleCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/NumericalArgumentCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kranvas/tools/line/LineToolParams.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/kranvas/console/commands/impl/QuitCommandTest.java" />
@@ -229,8 +224,10 @@
         <option value="$PROJECT_DIR$/src/test/java/com/kranvas/tools/utils/BucketFillerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kranvas/tools/bucketfill/BucketFillToolParams.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kranvas/console/execution/CommandRegistrryLoader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/BucketFillCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/kranvas/tools/bucketfill/BucketFillTool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/BucketFillCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/LineCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/RectangleCommand.java" />
       </list>
     </option>
   </component>
@@ -1277,7 +1274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1500798537147</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Implemented the bucket fill tool">
+      <created>1500803193474</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1500803193474</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1354,7 +1358,8 @@
     <MESSAGE value="Implemented the rectangle drawing tool" />
     <MESSAGE value="Implemented the create canvas command" />
     <MESSAGE value="Improved test coverage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improved test coverage" />
+    <MESSAGE value="Implemented the bucket fill tool" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented the bucket fill tool" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1373,7 +1378,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/BucketFillCommand.java</url>
-          <line>33</line>
+          <line>36</line>
           <properties />
           <option name="timeStamp" value="32" />
         </line-breakpoint>
@@ -1596,14 +1601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/RectangleCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kranvas/console/execution/ExecutionResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1756,24 +1753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/NumericalArgumentCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/LineCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kranvas/console/execution/CommandRegistrryLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1797,14 +1776,6 @@
           <folding>
             <element signature="e#372#373#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/BucketFillCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1839,8 +1810,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/kranvas/tools/bucketfill/BucketFillTool.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/NumericalArgumentCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <caret line="39" column="57" lean-forward="true" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/BucketFillCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="48" column="72" lean-forward="false" selection-start-line="48" selection-start-column="72" selection-end-line="48" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/LineCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="29" column="66" lean-forward="false" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/kranvas/console/commands/impl/RectangleCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>

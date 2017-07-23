@@ -31,6 +31,9 @@ public class BucketFillCommand implements Command {
 
     @Override
     public void execute(ExecutionContext executionContext, String params) {
+        if (executionContext.getCanvas() == null)
+            throw new IllegalStateException("No canvas is open, please create one");
+
         List<Integer> intParams = IntegerListParser.parse(params);
         if (intParams == null || intParams.size() < NUM_ARGUMENTS)
             throw new IllegalArgumentException("Point not specified correctly ");
@@ -43,7 +46,7 @@ public class BucketFillCommand implements Command {
         if (!Character.isLetter(fillColor))
             throw new IllegalArgumentException("Fill color should be an letter");
 
-        Point starting = Point.at(intParams.get(0), intParams.get(1));
+        Point starting = Point.at(intParams.get(0)-1, intParams.get(1)-1);
         BucketFillToolParams bucketFillToolParams = new BucketFillToolParams(starting, fillColor);
         executionContext.getCanvas().applyTool(tool, bucketFillToolParams);
         executionContext.setPrintCanvasRequested(true);

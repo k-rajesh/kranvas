@@ -37,8 +37,8 @@ public class RectangleCommand extends NumericalArgumentCommand {
         if (executionContext.getCanvas() == null)
             throw new IllegalStateException("No canvas is open, please create one");
 
-        Point p1 = Point.at(intParams.get(0), intParams.get(1));
-        Point p2 = Point.at(intParams.get(2), intParams.get(3));
+        Point p1 = Point.at(intParams.get(0)-1, intParams.get(1)-1);
+        Point p2 = Point.at(intParams.get(2)-1, intParams.get(3)-1);
         RectangleToolParams rectangleToolParams = new RectangleToolParams(p1, p2);
 
         executionContext.getCanvas().applyTool(tool, rectangleToolParams);
