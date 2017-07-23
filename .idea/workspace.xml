@@ -3,47 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="dbfde380-fd54-4266-8ea5-85cc58665b99" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/commands/impl/BaseCommand.java" afterPath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/commands/impl/BaseCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/commands/impl/BucketFillCommand.java" afterPath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/commands/impl/BucketFillCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/commands/impl/LineCommand.java" afterPath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/commands/impl/LineCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/commands/impl/NumericalArgumentCommand.java" afterPath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/commands/impl/NumericalArgumentCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/commands/impl/QuitCommand.java" afterPath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/commands/impl/QuitCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/commands/impl/RectangleCommand.java" afterPath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/commands/impl/RectangleCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/execution/CommandRegistry.java" afterPath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/execution/CommandRegistry.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/execution/ExecutionContext.java" afterPath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/execution/ExecutionContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/execution/ExecutionResult.java" afterPath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/execution/ExecutionResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/rendering/CanvasConsoleRenderer.java" afterPath="$PROJECT_DIR$/console/src/main/java/com/kranvas/console/rendering/CanvasConsoleRenderer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/console/src/test/java/com/kranvas/console/commands/impl/BucketFillCommandTest.java" afterPath="$PROJECT_DIR$/console/src/test/java/com/kranvas/console/commands/impl/BucketFillCommandTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/console/src/test/java/com/kranvas/console/commands/impl/CreateCanvasCommandTest.java" afterPath="$PROJECT_DIR$/console/src/test/java/com/kranvas/console/commands/impl/CreateCanvasCommandTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/console/src/test/java/com/kranvas/console/commands/impl/HelpCommandTest.java" afterPath="$PROJECT_DIR$/console/src/test/java/com/kranvas/console/commands/impl/HelpCommandTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/console/src/test/java/com/kranvas/console/commands/impl/LineCommandTest.java" afterPath="$PROJECT_DIR$/console/src/test/java/com/kranvas/console/commands/impl/LineCommandTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/console/src/test/java/com/kranvas/console/commands/impl/QuitCommandTest.java" afterPath="$PROJECT_DIR$/console/src/test/java/com/kranvas/console/commands/impl/QuitCommandTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/console/src/test/java/com/kranvas/console/commands/impl/RectangleCommandTest.java" afterPath="$PROJECT_DIR$/console/src/test/java/com/kranvas/console/commands/impl/RectangleCommandTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/console/src/test/java/com/kranvas/console/execution/CommandRegistryTest.java" afterPath="$PROJECT_DIR$/console/src/test/java/com/kranvas/console/execution/CommandRegistryTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/console/src/test/java/com/kranvas/console/rendering/ImageToStringRendererTest.java" afterPath="$PROJECT_DIR$/console/src/test/java/com/kranvas/console/rendering/ImageToStringRendererTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/kranvas/core/Canvas.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/kranvas/core/Canvas.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/kranvas/core/Image.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/kranvas/core/Image.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/kranvas/core/Point.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/kranvas/core/Point.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/kranvas/validations/ValidationChain.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/kranvas/validations/ValidationChain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/kranvas/validations/ValidationResult.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/kranvas/validations/ValidationResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/kranvas/validations/impl/LineValidation.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/kranvas/validations/impl/LineValidation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/kranvas/validations/impl/NonNegativeNumberValidation.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/kranvas/validations/impl/NonNegativeNumberValidation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/kranvas/validations/impl/NumberWithinRangeValidation.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/kranvas/validations/impl/NumberWithinRangeValidation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/main/java/com/kranvas/validations/impl/PointWithinImageValidation.java" afterPath="$PROJECT_DIR$/core/src/main/java/com/kranvas/validations/impl/PointWithinImageValidation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/test/java/com/kranvas/core/impl/BitmapImageTest.java" afterPath="$PROJECT_DIR$/core/src/test/java/com/kranvas/core/impl/BitmapImageTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/core/src/test/java/com/kranvas/validations/impl/NumberWithinRangeValidationTest.java" afterPath="$PROJECT_DIR$/core/src/test/java/com/kranvas/validations/impl/NumberWithinRangeValidationTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/src/main/java/com/kranvas/tools/utils/BucketFiller.java" afterPath="$PROJECT_DIR$/tools/src/main/java/com/kranvas/tools/utils/BucketFiller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/src/test/java/com/kranvas/tools/bucketfill/BucketFillToolTest.java" afterPath="$PROJECT_DIR$/tools/src/test/java/com/kranvas/tools/bucketfill/BucketFillToolTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/src/test/java/com/kranvas/tools/line/LineToolTest.java" afterPath="$PROJECT_DIR$/tools/src/test/java/com/kranvas/tools/line/LineToolTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/src/test/java/com/kranvas/tools/rectange/RectangleToolTest.java" afterPath="$PROJECT_DIR$/tools/src/test/java/com/kranvas/tools/rectange/RectangleToolTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/src/test/java/com/kranvas/tools/utils/BucketFillerTest.java" afterPath="$PROJECT_DIR$/tools/src/test/java/com/kranvas/tools/utils/BucketFillerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tools/src/test/java/com/kranvas/tools/utils/RectangleDrawerTest.java" afterPath="$PROJECT_DIR$/tools/src/test/java/com/kranvas/tools/utils/RectangleDrawerTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/core/target/" />
     <ignored path="$PROJECT_DIR$/tools/target/" />
     <ignored path="$PROJECT_DIR$/console/target/" />
+    <ignored path=".idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,18 +32,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CreateCanvasCommandTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/console/src/test/java/com/kranvas/console/commands/impl/CreateCanvasCommandTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="97" column="29" lean-forward="false" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CommandRegistryTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/console/src/test/java/com/kranvas/console/execution/CommandRegistryTest.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -147,11 +101,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuitCommandTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="QuitCommandTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/console/src/test/java/com/kranvas/console/commands/impl/QuitCommandTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
               <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -340,6 +304,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kranvas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kranvas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="console" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -351,8 +329,8 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
-    <property name="last_opened_file_path" value="C:/cygwin64/bin/git.exe" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/console/src/main/java" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -913,7 +891,14 @@
       <option name="project" value="LOCAL" />
       <updated>1500825482588</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Fixed the warnings">
+      <created>1500826223049</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1500826223049</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -997,7 +982,8 @@
     <MESSAGE value="Improved test coverage" />
     <MESSAGE value="Divided into a multi module maven project" />
     <MESSAGE value="Introduced a BaseCommand class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Introduced a BaseCommand class" />
+    <MESSAGE value="Fixed the warnings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the warnings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1036,16 +1022,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/test/java/com/kranvas/validations/impl/HorizontalLineValidationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="9" lean-forward="false" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/com/kranvas/core/Tool.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1479,6 +1455,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
           <folding />
         </state>
       </provider>
